@@ -7,7 +7,7 @@ Safe Haven MFB for your Laravel project made easy
 You can install the package via composer:
 
 ```bash
-composer require chedilas/safehaven
+composer require chedilas/safehaven_mfb
 ```
 
 Publishing the config file
