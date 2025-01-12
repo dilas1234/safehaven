@@ -1,0 +1,45 @@
+{
+    "name": "chedilas/safehaven",
+    "description": "A simple integration of a safehaven packages",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Che Dilas Yusuph",
+            "email": "josephdilas@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "firebase/php-jwt": "^6.10",
+        "illuminate/contracts": "^11.37",
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CheDilas\\SafeHaven\\": "src/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.9",
+        "pestphp/pest": "^3.7"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+    "laravel": {
+      "providers": [
+        "CheDilas\\SafeHaven\\SafeHavenServiceProvider"
+      ],
+      "aliases": {
+        "SafeHaven": "CheDilas\\SafeHaven\\SafeHaven"
+      }
+    }
+  },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
